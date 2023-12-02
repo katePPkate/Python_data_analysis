@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
                                             ТЕХНИЧЕСКИЙ АНАЛИЗ АКЦИЙ
 '''
 
-name = 'ОФЗ 26223'
+name = 'РусГидро'
 
 #подготовка файла
-Stock_of_RG = pd.read_csv('C:\ОФЗ 26223.txt', sep=';')
+Stock_of_RG = pd.read_csv('RusGidro.txt', sep=';')
 Stock_of_RG = Stock_of_RG.rename(columns = {'<DATE>':'date', '<CLOSE>':'close', '<OPEN>':'open',
                                             '<HIGH>':'high', '<LOW>':'low', '<VOL>':'vol'})
 Stock_of_RG.date = pd.to_datetime(Stock_of_RG.date, format='%d/%m/%y')
